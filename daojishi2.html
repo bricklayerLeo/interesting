@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .num1{
+        position: absolute;
+        top: 250px;
+        left: 250px;
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        color: aliceblue;
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .num{
+        position: absolute;
+    }
+    
+
+     @keyframes zi {
+         to{
+             opacity: 1;
+         }
+     }
+     @keyframes xiaoshi{
+         to{
+            opacity: 0;
+         }
+         }
+     
+    .zi{
+        opacity: 0;
+        animation: zi 1s forwards,xiaoshi 1s 2s forwards;
+    }
+
+    .ten{
+        opacity: 0;
+        animation: zi 1s 4s forwards,xiaoshi 1s 5s forwards;
+    }
+    .nine{
+        opacity: 0;
+        animation: zi 1s 6s forwards,xiaoshi 1s 7s forwards;
+    }
+    .eight{
+        opacity: 0;
+        animation: zi 1s 8s forwards,xiaoshi 1s 9s forwards;
+    }
+    .six{
+        opacity: 0;
+        animation: zi 1s 10s forwards,xiaoshi 1s 11s forwards;
+    }
+    .five{
+        opacity: 0;
+        animation: zi 1s 12s forwards,xiaoshi 1s 13s forwards;
+    }
+    .four{
+        opacity: 0;
+        animation: zi 1s 14s forwards,xiaoshi 1s 15s forwards;
+    }
+    .three{
+        opacity: 0;
+        animation: zi 1s 16s forwards,xiaoshi 1s 17s forwards;
+    }
+    .two{
+        opacity: 0;
+        animation: zi 1s 18s forwards,xiaoshi 1s 19s forwards;
+    }
+    .one{
+        opacity: 0;
+        animation: zi 1s 20s forwards,xiaoshi 1s 21s forwards;
+    }
+    .zero{
+        opacity: 0;
+        animation: zi 1s 22s forwards,xiaoshi 1s 23s forwards;
+    }
+    .zou{
+        opacity: 0;
+        animation: zi 1s 24s forwards,xiaoshi 1s 25s forwards;
+    }
+    .da{
+        font-size:180px;
+    }
+    </style>
+</head>
+<body>
+    <div   class="num1" >
+    <div class="num zi">马上开始倒计时</div>
+    <div class="num da ten">10</div>
+    <div class="num da nine">9</div>
+    <div class="num da eight">8</div>
+    <div class="num da six">6</div>
+    <div class="num da five">5</div>
+    <div class="num  da four">4</div>
+    <div class="num da three">3</div>
+    <div class="num da two">2</div>
+    <div class="num da one">1</div>
+    <div class="num da zero">0</div>
+    <div class="num  zou" style="font-size: 80px;">走起!</div>
+</div>
+</body>
+</html>
