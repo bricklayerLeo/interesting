@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+           list-style-type: none;
+        }
+        @keyframes left{
+            to{
+                left: 0;
+            }
+        }
+    .slide{
+        position: fixed;
+        bottom: 0;
+        left: -100%;
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        opacity: .8;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: left 1s 1s ease-in forwards;
+    }
+    .eg{
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        position: absolute;
+        bottom: 300px;
+        right: 0;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    @keyframes da {
+    
+        to{
+        transform: scale(1)
+        }
+    }
+    #chuxian{
+        position: absolute;
+        bottom: 300px;
+        right: 0px;
+        width:400px;
+        height: 600px;
+        background-color: black;
+        opacity: .8;
+        visibility: hidden;
+        transform: scale(0);
+
+        transform-origin: 100% 100%;
+        animation: da 2s  forwards;
+        color: aliceblue;
+     
+     
+       
+    }
+    .word{
+        position: absolute;;
+        top: 150px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <ul class="list">
+            <li>吃饭了吗</li>
+            <li>哈哈哈哈发；两件快递师傅</li>
+            <li>是大股东是股份的股份给</li>
+            <li>点撒给收到公司的公司的公司公司的公司的高</li>
+            <li>撒打速度撒给房费</li>
+            <li>啊双飞五个问题给人发货过了客户给看见好了</li>
+        </ul>
+    </div>
+
+
+    <div class="eg"></div>
+    <div id="chuxian">
+         <div class="word"> <p>啊双飞五个问题给人发货</p> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>啊双飞五个问题给人发货看见</p> 
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <p>啊双飞五个问题给看见</p> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>啊双飞五个问题客户给看见</p> 
+
+        </div>
+    </div>
+    <script>
+        var slide = document.getElementsByClassName('slide')[0];
+        var obtn = document.getElementsByClassName('eg')[0];
+        var chu = document.getElementById('chuxian');
+   
+    obtn.onclick=function(){
+        chu.style.visibility='visible'
+       
+    }
+    </script>
+</body>
+</html>
