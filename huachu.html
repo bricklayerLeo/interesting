@@ -40,12 +40,17 @@
         bottom: 300px;
         right: 0;
         border-radius: 50%;
-        z-index: 1;
+       
     }
     @keyframes da {
     
         to{
         transform: scale(1)
+        }
+    }
+    @keyframes xiao{
+        to{
+        transform: scale(0)
         }
     }
     #chuxian{
@@ -56,20 +61,32 @@
         height: 600px;
         background-color: black;
         opacity: .8;
-        visibility: hidden;
         transform: scale(0);
-
         transform-origin: 100% 100%;
         animation: da 2s  forwards;
         color: aliceblue;
-     
-     
+        visibility: hidden;
+        
        
     }
-    .word{
+     .word{
         position: absolute;;
         top: 150px;
+       
         
+    }
+    .close{
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: brown;
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        border-radius: 50%;
     }
     </style>
 </head>
@@ -105,18 +122,10 @@
             <br>
             <br>
             <p>啊双飞五个问题客户给看见</p> 
-
+           
         </div>
+        <div class="close">×</div>
     </div>
-    <script>
-        var slide = document.getElementsByClassName('slide')[0];
-        var obtn = document.getElementsByClassName('eg')[0];
-        var chu = document.getElementById('chuxian');
-   
-    obtn.onclick=function(){
-        chu.style.visibility='visible'
-       
-    }
-    </script>
+    
 </body>
 </html>

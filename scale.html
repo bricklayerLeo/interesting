@@ -2,33 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        
+    #anniu1{
+        width: 60px;
+        height: 20px;
+        background-color: red;
+    }
+    #anniu2{
+        margin-top: 60px;
+        width: 60px;
+        height: 20px;
+        background-color: black;
+        color: aliceblue;
+    }
         @keyframes xia {
             to{
                 transform: scale(1);
             }
         }
-    .sca{
+    #sca{
         width: 300px;
         height: 300px;
         background-color: red;
         position: absolute;
         right: 0;
         top: 300px;
-        transform: scale(0);
+        
         transform-origin: 100% 100%;
-        animation:  xia 1s forwards;
+        visibility: hidden;
+        
     }
+    @keyframes xiao {
+            to{
+                transform: scale(0);
+            }
+        }
+  
     </style>
 </head>
 
 <body>
-    <div class="sca">
+    <div id="sca"> </div>
+    <div id="sca1"></div>
+    <div id="anniu1">anniu1</div>
+    <div id="anniu2">anniu2</div>
+    <script>
+    var sca = document.getElementById('sca')
+    
+    var anniu1 = document.getElementById('anniu1')
+    var anniu2 = document.getElementById('anniu2')
 
+    anniu1.onclick=function(){
+    
+       sca.style.transform='scale(0)';
+        sca.style.animation='xia 1s forwards';
+       
+        sca.style.visibility='visible';
+       
+    }
 
-    </div>
+    anniu2.onclick=function(){
+        sca.style.transform='scale(1)';
+        sca.style.animation='xiao 1s forwards';
+      
+        
+        
+}
+    </script>
 </body>
 </html>
