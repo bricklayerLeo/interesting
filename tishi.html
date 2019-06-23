@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .zhu{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+       
+        margin:300px auto;
+    }
+    .tishi{
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        margin-left: -40px;
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        background-color: black;
+        opacity: 0;
+        transition: all .5s ease;
+        color: aliceblue;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="zhu"></div>
+    <div class="tishi">这是提示</div>
+    <script>
+    var zhu = document.getElementsByClassName('zhu')[0];
+    var tishi = document.getElementsByClassName('tishi')[0];
+
+    zhu.onmousemove=function(){
+        tishi.style.opacity=1;
+        tishi.style.top='200px';
+        
+    }
+    </script>
+</body>
+</html>
