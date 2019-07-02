@@ -392,9 +392,9 @@
             console.log(cap)
             var t =document.body.scrollTop || document.documentElement.scrollTop;
            for(var i=0;i<cap.length;i++){
-            if(cap[i].offsetTop<=0){
+            if(t>680){
                
-         console.log(cap[i].offsetTop)
+       
           cap[i].style.position = 'fixed';
           cap[i].style.top = 0;
                 
