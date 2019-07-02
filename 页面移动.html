@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .total{
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        }
+    .zhuye{
+       position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: tomato;
+       
+    }
+    .page2{
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black; 
+        display: none;
+    }
+    .but{
+        background-color: yellowgreen;
+        width: 100px;
+        height: 50px;
+    }
+    .tishi{
+        position: absolute;
+        top: 500px;
+        right: 20px;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+      
+    }
+    .jiantou{
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        left: -25px;
+        top: 50%;
+        margin-top: -25px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="total">
+        <div class="page2"></div>
+    <div class="zhuye">
+       <div class="tishi">
+           <div class="jiantou"></div>
+       </div>
+       <input type="button" value="点击" class="but">
+    </div>
+</div>
+<script>
+let obt = document.getElementsByClassName('but')[0];
+let page2 = document.getElementsByClassName('page2')[0];
+let page = document.getElementsByClassName('zhuye')[0];
+obt.onclick=function(){
+    if(  page.style.left=='20%'&&
+   page2.style.display=='block'){
+    page.style.left='0';
+   page2.style.display='none';
+
+    }else{
+        page.style.left='20%';
+   page2.style.display='block';
+    }
+  
+}
+</script>
+</body>
+</html>
